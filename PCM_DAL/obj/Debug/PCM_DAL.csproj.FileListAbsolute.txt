@@ -43,3 +43,12 @@ C:\Users\Acer\Desktop\PrivateClinicManagement (1)\PrivateClinicManagement\PCM_DA
 C:\Users\Acer\Desktop\PrivateClinicManagement (1)\PrivateClinicManagement\PCM_DAL\obj\Debug\PCM_DAL.csproj.CopyComplete
 C:\Users\Acer\Desktop\PrivateClinicManagement (1)\PrivateClinicManagement\PCM_DAL\obj\Debug\PCM_DAL.dll
 C:\Users\Acer\Desktop\PrivateClinicManagement (1)\PrivateClinicManagement\PCM_DAL\obj\Debug\PCM_DAL.pdb
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\bin\Debug\PCM_DAL.dll
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\bin\Debug\PCM_DAL.pdb
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\bin\Debug\PCM_DTO.dll
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\bin\Debug\PCM_DTO.pdb
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\obj\Debug\PCM_DAL.csproj.AssemblyReference.cache
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\obj\Debug\PCM_DAL.csproj.CoreCompileInputs.cache
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\obj\Debug\PCM_DAL.csproj.Up2Date
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\obj\Debug\PCM_DAL.dll
+I:\GithubProjects\Private-Clinic-Management-\PCM_DAL\obj\Debug\PCM_DAL.pdb

@@ -27,3 +27,9 @@ C:\Users\Acer\Desktop\PrivateClinicManagement (1)\PrivateClinicManagement\PCM_DT
 C:\Users\Acer\Desktop\PrivateClinicManagement (1)\PrivateClinicManagement\PCM_DTO\obj\Debug\PCM_DTO.csproj.CoreCompileInputs.cache
 C:\Users\Acer\Desktop\PrivateClinicManagement (1)\PrivateClinicManagement\PCM_DTO\obj\Debug\PCM_DTO.dll
 C:\Users\Acer\Desktop\PrivateClinicManagement (1)\PrivateClinicManagement\PCM_DTO\obj\Debug\PCM_DTO.pdb
+I:\GithubProjects\Private-Clinic-Management-\PCM_DTO\bin\Debug\PCM_DTO.dll
+I:\GithubProjects\Private-Clinic-Management-\PCM_DTO\bin\Debug\PCM_DTO.pdb
+I:\GithubProjects\Private-Clinic-Management-\PCM_DTO\obj\Debug\PCM_DTO.csproj.AssemblyReference.cache
+I:\GithubProjects\Private-Clinic-Management-\PCM_DTO\obj\Debug\PCM_DTO.csproj.CoreCompileInputs.cache
+I:\GithubProjects\Private-Clinic-Management-\PCM_DTO\obj\Debug\PCM_DTO.dll
+I:\GithubProjects\Private-Clinic-Management-\PCM_DTO\obj\Debug\PCM_DTO.pdb

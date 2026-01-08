@@ -50,12 +50,12 @@ namespace PCM_GUI
                 {
                     HoaDon_DTO hd = new HoaDon_DTO()
                     {
-                        maThuoc = Convert.ToInt16(cbThuoc.SelectedValue),
+                        maThuoc = Convert.ToInt32(cbThuoc.SelectedValue),
                         Thuoc = cbThuoc.Text,
                         DonViTinh = txtDVT.Text,
-                        SoLuong = Convert.ToInt16(txtSoLuong.Text.Trim()),
+                        SoLuong = Convert.ToInt32(txtSoLuong.Text.Trim()),
                         DonGia = Convert.ToDecimal(txtDonGia.Text.Trim()),
-                        ThanhTien = Convert.ToInt16(txtSoLuong.Text.Trim()) * Convert.ToDecimal(txtDonGia.Text.Trim())
+                        ThanhTien = Convert.ToInt32(txtSoLuong.Text.Trim()) * Convert.ToDecimal(txtDonGia.Text.Trim())
                     };
                     HoaDon.Add(hd);
 
@@ -183,14 +183,21 @@ namespace PCM_GUI
             return MaHoaDonExist;
         }
 
+        private static readonly Random _random = new Random();
         private string GenerateMaHoaDon()
         {
-            string maHD;
-            Random ran = new Random();
-            long orderpart1 = ran.Next(100, 999);
-            int orderpart2 = ran.Next(0, 99);
-            maHD = "HD" + "-" + orderpart1 + "-" + orderpart2;
-            return maHD;
+            string timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
+
+            // Define allowed characters
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            char[] randomChars = new char[6];
+
+            for (int i = 0; i < 6; i++)
+            {
+                randomChars[i] = chars[_random.Next(chars.Length)];
+            }
+
+            return $"{timestamp}{new string(randomChars)}";
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
@@ -372,7 +379,48 @@ namespace PCM_GUI
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+            // 1. Save to Database
             LuuHoaDon((int)Save.save);
+
+            // 2. Trigger the actual print dialog (optional)
+            //if (printDocument1 != null)
+            //{
+            //    printDocument1.Print();
+            //}
+
+            // 3. Reset and Disable form
+            ResetForm();
+        }
+
+        private void ResetForm()
+        {
+            // Clear text and data
+            txtMaHoaDon.Clear();
+            txtTenBN.Clear();
+            txtTrieuChung.Clear();
+            cbLoaiBenh.SelectedIndex = -1;
+            cbThuoc.SelectedIndex = -1;
+            txtSoLuong.Clear();
+            txtDonGia.Clear();
+            txtDVT.Clear();
+            txtTotal.Text = "0";
+            txtTienKham.Text = "0";
+            txtTongCong.Text = "0";
+
+            // Clear the DataGridView and the internal List
+            HoaDon.Clear();
+            dgvHD.DataSource = null;
+
+            // Handle Control States
+            btnNew.Enabled = true;         // Enable New
+            btnPrint.Enabled = false;       // Disable Print
+            btnPreview.Enabled = false;     // Disable Preview
+            ItemGroupBox.Enabled = false;   // Disable GroupBox containing inputs
+
+            // Specifically keep DateNgayTao enabled or untouched as requested
+            // dateNgayTao.Value = DateTime.Now; // Uncomment this if you want to refresh the time too
+
+            dgvHD.Focus();
         }
 
         private void LuuHoaDon(int luu)
@@ -412,10 +460,10 @@ namespace PCM_GUI
                     }
                 }
                 MessageBox.Show("Đã in hóa đơn", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } 
+            }
             catch (Exception ex)
             {
-
+                MessageBox.Show("Lỗi khi lưu hóa đơn: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
