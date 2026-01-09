@@ -31,7 +31,7 @@ CREATE TABLE DanhSachBenhNhan (
 
 CREATE TABLE HoaDon (
     maHD varchar(30) PRIMARY KEY NOT NULL, -- Increased for timestamp+random
-    ngaytao smalldatetime NULL,
+    ngaytao datetime NULL,
     tenBN nvarchar(50) NULL,
     tienthuoc decimal(18, 0) NULL,
     tongcong decimal(18, 0) NULL,
@@ -93,3 +93,4 @@ INSERT INTO [dbo].[Thuoc] ([ID], [tenThuoc], [donviTinh], [giaThuoc]) VALUES
 SET IDENTITY_INSERT [dbo].[Thuoc] OFF
 
 GO 
+
