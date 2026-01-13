@@ -151,10 +151,12 @@ namespace PCM_GUI
                 maHD = GenerateMaHoaDon();
                 isMaHoaDonExisted = check(maHD);
                 txtMaHoaDon.Text = maHD;
-            }           
+            }
+            dateNgayTao.Value = DateTime.Now;
             btnNew.Enabled = false;
             btnPrint.Enabled = true;
             btnPreview.Enabled = true;
+            cbLoaiBenh.Enabled = true;
             ItemGroupBox.Enabled = true;
             txtTenBN.Focus();
         }
@@ -186,13 +188,13 @@ namespace PCM_GUI
         private static readonly Random _random = new Random();
         private string GenerateMaHoaDon()
         {
-            string timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
+            string timestamp = DateTime.Now.ToString("yyyyMMdd");
 
             // Define allowed characters
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            char[] randomChars = new char[6];
+            char[] randomChars = new char[9];
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 9; i++)
             {
                 randomChars[i] = chars[_random.Next(chars.Length)];
             }
@@ -434,7 +436,7 @@ namespace PCM_GUI
                     using (SqlCommand cmd = new SqlCommand("INSERT INTO [HoaDon](maHD,ngaytao,tenBN,tienthuoc,tongcong,donviTinh) VALUES (@maHD,@ngaytao,@tenBN,@tienthuoc,@tongcong,@donviTinh)", cnn))
                     {
                         cmd.Parameters.AddWithValue("@maHD", txtMaHoaDon.Text);
-                        cmd.Parameters.AddWithValue("@ngaytao", dateNgayTao.Value.Date);
+                        cmd.Parameters.AddWithValue("@ngaytao", dateNgayTao.Value);
                         cmd.Parameters.AddWithValue("@tenBN", txtTenBN.Text);
                         cmd.Parameters.AddWithValue("@tienthuoc", Convert.ToDecimal(txtTotal.Text));
                         cmd.Parameters.AddWithValue("@tongcong", Convert.ToDecimal(txtTongCong.Text));
@@ -448,10 +450,10 @@ namespace PCM_GUI
                         using (SqlCommand cmd = new SqlCommand("INSERT INTO [ThongKe](maHD,maThuoc,tenThuoc,donviTinh,soLuong,donGia,thanhTien) VALUES (@maHD,@maThuoc,@tenThuoc,@donviTinh,@soLuong,@donGia,@thanhTien)", cnn))
                         {
                             cmd.Parameters.AddWithValue("@maHD", txtMaHoaDon.Text);
-                            cmd.Parameters.AddWithValue("@maThuoc", Convert.ToInt16(row.Cells["maThuoc"].Value));
+                            cmd.Parameters.AddWithValue("@maThuoc", Convert.ToInt32(row.Cells["maThuoc"].Value));
                             cmd.Parameters.AddWithValue("@tenThuoc", Convert.ToString(row.Cells["Thuoc"].Value));
                             cmd.Parameters.AddWithValue("@donviTinh", Convert.ToString(row.Cells["DonViTinh"].Value));
-                            cmd.Parameters.AddWithValue("@soLuong", Convert.ToInt16(row.Cells["SoLuong"].Value));
+                            cmd.Parameters.AddWithValue("@soLuong", Convert.ToInt32(row.Cells["SoLuong"].Value));
                             cmd.Parameters.AddWithValue("@donGia", Convert.ToDecimal(row.Cells["DonGia"].Value));
                             cmd.Parameters.AddWithValue("@thanhTien", Convert.ToDecimal(row.Cells["ThanhTien"].Value));
 
