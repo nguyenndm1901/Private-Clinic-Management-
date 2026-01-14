@@ -2,12 +2,9 @@
 using PCM_BUS;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using PCM_GUI.Properties;
 using System.Data.SqlClient;
@@ -192,9 +189,9 @@ namespace PCM_GUI
 
             // Define allowed characters
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            char[] randomChars = new char[9];
+            char[] randomChars = new char[6];
 
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < 6; i++)
             {
                 randomChars[i] = chars[_random.Next(chars.Length)];
             }
@@ -381,17 +378,15 @@ namespace PCM_GUI
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            // 1. Save to Database
-            LuuHoaDon((int)Save.save);
-
-            // 2. Trigger the actual print dialog (optional)
-            //if (printDocument1 != null)
-            //{
-            //    printDocument1.Print();
-            //}
-
-            // 3. Reset and Disable form
-            ResetForm();
+            if (dgvHD.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có thuốc để in hóa đơn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            } else
+            {
+                LuuHoaDon((int)Save.save);
+                ResetForm();
+            }
         }
 
         private void ResetForm()
