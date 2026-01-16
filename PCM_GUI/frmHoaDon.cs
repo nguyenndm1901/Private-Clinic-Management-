@@ -339,41 +339,43 @@ namespace PCM_GUI
 
         private void cbThuoc_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (cbThuoc.SelectedValue != null)
+            if (cbThuoc.SelectedValue != null && int.TryParse(cbThuoc.SelectedValue.ToString(), out int maThuoc))
             {
-                int maThuoc = Convert.ToInt16(cbThuoc.SelectedValue);
-                decimal giaThuoc = GetgiaThuoc(maThuoc);
-                txtDonGia.Text = giaThuoc.ToString();
-                string donVi = GetdonVi(maThuoc);
-                txtDVT.Text = donVi.ToString(); ;
+                var thuocInfo = GetThuocDetails(maThuoc);
+
+                if (thuocInfo != null)
+                {
+                    txtDonGia.Text = thuocInfo.Value.Gia.ToString();
+                    txtDVT.Text = thuocInfo.Value.DonVi;
+                }
             }
         }
 
-        private decimal GetgiaThuoc(int maThuoc)
+        private (decimal Gia, string DonVi)? GetThuocDetails(int maThuoc)
         {
-            string ConnectionString = ConfigurationManager.AppSettings["ConnectionString"];
-            using (SqlConnection cnn = new SqlConnection(ConnectionString))
+            string connectionString = ConfigurationManager.AppSettings["ConnectionString"];
+
+            string query = "SELECT giaThuoc, donviTinh FROM Thuoc WHERE ID = @ID";
+
+            using (SqlConnection cnn = new SqlConnection(connectionString))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT giaThuoc FROM Thuoc WHERE ID=@ID", cnn))
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
                 {
-                    cnn.Open();
                     cmd.Parameters.AddWithValue("@ID", maThuoc);
-                    return (decimal)cmd.ExecuteScalar();
+                    cnn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            decimal gia = reader["giaThuoc"] != DBNull.Value ? (decimal)reader["giaThuoc"] : 0;
+                            string dvt = reader["donviTinh"]?.ToString() ?? "";
+                            return (gia, dvt);
+                        }
+                    }
                 }
             }
-        }
-        private string GetdonVi(int maThuoc)
-        {
-            string ConnectionString = ConfigurationManager.AppSettings["ConnectionString"];
-            using (SqlConnection cnn = new SqlConnection(ConnectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand("SELECT donviTinh FROM Thuoc WHERE ID=@ID", cnn))
-                {
-                    cnn.Open();
-                    cmd.Parameters.AddWithValue("@ID", maThuoc);
-                    return (string)cmd.ExecuteScalar();
-                }
-            }
+            return null;
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -391,7 +393,6 @@ namespace PCM_GUI
 
         private void ResetForm()
         {
-            // Clear text and data
             txtMaHoaDon.Clear();
             txtTenBN.Clear();
             txtTrieuChung.Clear();
@@ -404,18 +405,15 @@ namespace PCM_GUI
             txtTienKham.Text = "0";
             txtTongCong.Text = "0";
 
-            // Clear the DataGridView and the internal List
             HoaDon.Clear();
             dgvHD.DataSource = null;
 
-            // Handle Control States
-            btnNew.Enabled = true;         // Enable New
-            btnPrint.Enabled = false;       // Disable Print
-            btnPreview.Enabled = false;     // Disable Preview
-            ItemGroupBox.Enabled = false;   // Disable GroupBox containing inputs
+            btnNew.Enabled = true;
+            btnPrint.Enabled = false;
+            btnPreview.Enabled = false;
+            ItemGroupBox.Enabled = false;
 
-            // Specifically keep DateNgayTao enabled or untouched as requested
-            // dateNgayTao.Value = DateTime.Now; // Uncomment this if you want to refresh the time too
+            dateNgayTao.Value = DateTime.Now; 
 
             dgvHD.Focus();
         }
