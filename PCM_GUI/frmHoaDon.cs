@@ -426,7 +426,7 @@ namespace PCM_GUI
                 using (SqlConnection cnn = new SqlConnection(ConnectionString))
                 {
                     cnn.Open();
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO [HoaDon](maHD,ngaytao,tenBN,tienthuoc,tongcong,donviTinh) VALUES (@maHD,@ngaytao,@tenBN,@tienthuoc,@tongcong,@donviTinh)", cnn))
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO [HoaDon](maHD,ngaytao,tenBN,tienthuoc,tongcong) VALUES (@maHD,@ngaytao,@tenBN,@tienthuoc,@tongcong)", cnn))
                     {
                         cmd.Parameters.AddWithValue("@maHD", txtMaHoaDon.Text);
                         cmd.Parameters.AddWithValue("@ngaytao", dateNgayTao.Value);
