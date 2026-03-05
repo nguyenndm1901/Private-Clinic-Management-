@@ -433,7 +433,6 @@ namespace PCM_GUI
                         cmd.Parameters.AddWithValue("@tenBN", txtTenBN.Text);
                         cmd.Parameters.AddWithValue("@tienthuoc", Convert.ToDecimal(txtTotal.Text));
                         cmd.Parameters.AddWithValue("@tongcong", Convert.ToDecimal(txtTongCong.Text));
-                        cmd.Parameters.AddWithValue("@donviTinh", txtDVT.Text);
 
                         cmd.ExecuteNonQuery();
                     }
