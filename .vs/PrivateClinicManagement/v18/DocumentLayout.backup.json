@@ -30,7 +30,8 @@
               "RelativeToolTip": "PCM_GUI\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-01-08T12:35:21.152Z"
+              "WhenOpened": "2026-01-08T12:35:21.152Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -38,9 +39,9 @@
               "Title": "frmHoaDon.cs",
               "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs",
               "RelativeDocumentMoniker": "PCM_GUI\\frmHoaDon.cs",
-              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs*",
-              "RelativeToolTip": "PCM_GUI\\frmHoaDon.cs*",
-              "ViewState": "AgIAALsBAAAAAAAAAAAuwG4BAAAfAAAAAAAAAA==",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs",
+              "RelativeToolTip": "PCM_GUI\\frmHoaDon.cs",
+              "ViewState": "AgIAAFcBAAAAAAAAAAAUwLwBAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T12:34:00.297Z",
               "EditorCaption": ""
