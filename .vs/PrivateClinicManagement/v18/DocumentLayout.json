@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "I:\\GithubProjects\\Private-Clinic-Management-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_gui\\frmhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_gui\\frmthembenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmthembenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14547E54-1C5A-449B-8AA2-9284CDBB4FEF}|PCM_DTO\\PCM_DTO.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_dto\\hoadon_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14547E54-1C5A-449B-8AA2-9284CDBB4FEF}|PCM_DTO\\PCM_DTO.csproj|solutionrelative:pcm_dto\\hoadon_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_gui\\frmthembenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmthembenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_gui\\frmhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_gui\\frmsudungthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmsudungthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_gui\\frmsudungthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmsudungthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_gui\\frmphieukhambenh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmphieukhambenh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|I:\\GithubProjects\\Private-Clinic-Management-\\pcm_gui\\frmhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14547E54-1C5A-449B-8AA2-9284CDBB4FEF}|PCM_DTO\\PCM_DTO.csproj|i:\\githubprojects\\private-clinic-management-\\pcm_dto\\quydinh_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|I:\\GithubProjects\\Private-Clinic-Management-\\pcm_gui\\frmphieukhambenh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmphieukhambenh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|I:\\GithubProjects\\Private-Clinic-Management-\\pcm_gui\\frmhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|solutionrelative:pcm_gui\\frmhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14547E54-1C5A-449B-8AA2-9284CDBB4FEF}|PCM_DTO\\PCM_DTO.csproj|I:\\GithubProjects\\Private-Clinic-Management-\\pcm_dto\\quydinh_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14547E54-1C5A-449B-8AA2-9284CDBB4FEF}|PCM_DTO\\PCM_DTO.csproj|solutionrelative:pcm_dto\\quydinh_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14547E54-1C5A-449B-8AA2-9284CDBB4FEF}|PCM_DTO\\PCM_DTO.csproj|I:\\GithubProjects\\Private-Clinic-Management-\\pcm_dto\\hoadon_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14547E54-1C5A-449B-8AA2-9284CDBB4FEF}|PCM_DTO\\PCM_DTO.csproj|solutionrelative:pcm_dto\\hoadon_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A21FF48E-FB1B-4095-839A-B3E4FDC471EA}|PCM_GUI\\PCM_GUI.csproj|I:\\GithubProjects\\Private-Clinic-Management-\\pcm_gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -30,23 +54,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 220,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmThemBenhNhan.cs",
+              "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmThemBenhNhan.cs",
+              "RelativeDocumentMoniker": "PCM_GUI\\frmThemBenhNhan.cs",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmThemBenhNhan.cs",
+              "RelativeToolTip": "PCM_GUI\\frmThemBenhNhan.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T11:42:46.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmThemBenhNhan.cs [Design]",
+              "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmThemBenhNhan.cs",
+              "RelativeDocumentMoniker": "PCM_GUI\\frmThemBenhNhan.cs",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmThemBenhNhan.cs [Design]",
+              "RelativeToolTip": "PCM_GUI\\frmThemBenhNhan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T11:42:44.068Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "frmSuDungThuoc.cs",
+              "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmSuDungThuoc.cs",
+              "RelativeDocumentMoniker": "PCM_GUI\\frmSuDungThuoc.cs",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmSuDungThuoc.cs",
+              "RelativeToolTip": "PCM_GUI\\frmSuDungThuoc.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T11:42:18.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmSuDungThuoc.cs [Design]",
+              "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmSuDungThuoc.cs",
+              "RelativeDocumentMoniker": "PCM_GUI\\frmSuDungThuoc.cs",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmSuDungThuoc.cs [Design]",
+              "RelativeToolTip": "PCM_GUI\\frmSuDungThuoc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T11:42:13.932Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmPhieuKhamBenh.cs",
+              "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmPhieuKhamBenh.cs",
+              "RelativeDocumentMoniker": "PCM_GUI\\frmPhieuKhamBenh.cs",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmPhieuKhamBenh.cs",
+              "RelativeToolTip": "PCM_GUI\\frmPhieuKhamBenh.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAswJ8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T11:29:18.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmPhieuKhamBenh.cs [Design]",
+              "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmPhieuKhamBenh.cs",
+              "RelativeDocumentMoniker": "PCM_GUI\\frmPhieuKhamBenh.cs",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmPhieuKhamBenh.cs [Design]",
+              "RelativeToolTip": "PCM_GUI\\frmPhieuKhamBenh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T11:29:16.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmHoaDon.cs [Design]",
               "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs",
               "RelativeDocumentMoniker": "PCM_GUI\\frmHoaDon.cs",
-              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs [Design]*",
-              "RelativeToolTip": "PCM_GUI\\frmHoaDon.cs [Design]*",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs [Design]",
+              "RelativeToolTip": "PCM_GUI\\frmHoaDon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-05T12:35:12.154Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "QuyDinh_DTO.cs",
               "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_DTO\\QuyDinh_DTO.cs",
               "RelativeDocumentMoniker": "PCM_DTO\\QuyDinh_DTO.cs",
@@ -59,12 +157,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "HoaDon_DTO.cs",
               "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_DTO\\HoaDon_DTO.cs",
               "RelativeDocumentMoniker": "PCM_DTO\\HoaDon_DTO.cs",
-              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_DTO\\HoaDon_DTO.cs*",
-              "RelativeToolTip": "PCM_DTO\\HoaDon_DTO.cs*",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_DTO\\HoaDon_DTO.cs",
+              "RelativeToolTip": "PCM_DTO\\HoaDon_DTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-05T12:34:09.023Z",
@@ -72,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "App.config",
               "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\App.config",
               "RelativeDocumentMoniker": "PCM_GUI\\App.config",
@@ -85,13 +183,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "frmHoaDon.cs",
               "DocumentMoniker": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs",
               "RelativeDocumentMoniker": "PCM_GUI\\frmHoaDon.cs",
-              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs*",
-              "RelativeToolTip": "PCM_GUI\\frmHoaDon.cs*",
-              "ViewState": "AgIAAJwBAAAAAAAAAAAUwKwBAACqAAAAAAAAAA==",
+              "ToolTip": "I:\\GithubProjects\\Private-Clinic-Management-\\PCM_GUI\\frmHoaDon.cs",
+              "RelativeToolTip": "PCM_GUI\\frmHoaDon.cs",
+              "ViewState": "AgIAAGIBAAAAAAAAAAAwwHsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T12:34:00.297Z",
               "EditorCaption": ""
