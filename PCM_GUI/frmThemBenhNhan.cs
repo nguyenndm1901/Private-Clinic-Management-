@@ -93,14 +93,21 @@ namespace PCM_GUI
             groupBox.Enabled = true;
             BtnAdd.Enabled = true;
         }
+        private static readonly Random _random = new Random();
         private string GenerateMaBenhNhan()
         {
-            string maBN;
-            Random ran = new Random();
-            long orderpart1 = ran.Next(100, 999);
-            int orderpart2 = ran.Next(0, 99);
-            maBN ="BN" + "-" + orderpart1 + "-" + orderpart2;
-            return maBN;
+            string timestamp = DateTime.Now.ToString("yyyyMMdd");
+
+            // Define allowed characters
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            char[] randomChars = new char[6];
+
+            for (int i = 0; i < 6; i++)
+            {
+                randomChars[i] = chars[_random.Next(chars.Length)];
+            }
+
+            return $"{timestamp}{new string(randomChars)}";
         }
         private bool check(string maBN)
         {
